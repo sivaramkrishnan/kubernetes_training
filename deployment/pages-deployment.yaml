@@ -17,9 +17,8 @@ spec:
         app: pages
     spec:
       containers:
-        - image: sivaramkrishnanduraisamy/pages:1.1
+        - image: sivaramkrishnanduraisamy/pages:pipeline
           name: pages
-          imagePullPolicy: Never
           ports:
             - containerPort: 8080
           env:
