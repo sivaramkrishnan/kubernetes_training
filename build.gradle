@@ -23,9 +23,9 @@ test {
 }
 
 bootRun.environment([
-        "PAGE_CONTENT": "YellowPages",
+        "PAGE_CONTENT": "Green Pages",
 ])
 
 test.environment([
-        "PAGE_CONTENT": "YellowPages",
+        "PAGE_CONTENT": "Green Pages",
 ])
