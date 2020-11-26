@@ -15,6 +15,12 @@ public class HomeApiTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
+    @Test
+    public void healthTest(){
+        String body = this.restTemplate.getForObject("/actuator/health", String.class);
+        assertThat(body).contains("UP");
+    }
+
     @Override
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
